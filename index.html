@@ -27,8 +27,8 @@
                 <div class="panel-left">
                     <h3>Don't have an account?</h3>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem recusandae soluta. Earum harum aspernatur reiciendis repellat.</p>
-                    <button class="btn btn-primary sign-up">Sign up</button>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem recusandae soluta.</p>
+                    <button class="btn btn-primary sign-up-switch">Sign up</button>
                 </div>
                 <!-- end panel-left -->
             </div>
@@ -38,17 +38,21 @@
                 <div class="panel-right" style="display:block;">
                     <h3>Already have an account?</h3>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem recusandae soluta. Earum harum aspernatur reiciendis repellat.</p>
-                    <button class="btn btn-primary sign-up">Log In</button>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem recusandae soluta.</p>
+                    <button class="btn btn-primary log-in-switch">Log In</button>
                 </div>
                 <!-- end panel-left -->
                 <!-- end embedded -->
             </div>
             <!-- end col-sm-6 -->
-            <div class="form-panel">
+            <div class="form-panel log-in">
                 <h3 class="with-logo">Login</h3>
                 <hr>
-                <form>
+                <form action="login.php">
+                    <div class="form-group fullname">
+                        <label for="fullname" class="fullname-label">Name<sup>*</sup></label>
+                        <input type="text" class="form-control" id="fullname" placeholder="Name" required>
+                    </div>
                     <div class="form-group">
                         <label for="email" class="email-label">Email<sup>*</sup></label>
                         <input type="email" class="form-control" id="email" placeholder="Email" required>
@@ -58,8 +62,8 @@
                         </label>
                         <input type="password" class="form-control" id="password" placeholder="Password" required>
                     </div>
-                    <button type="submit" class="btn btn-warning log-in">Login</button>
-                    <a href="forgot.php">Forgot?</a>
+                    <button type="submit" class="btn btn-warning log-in in-form">Login</button>
+                    <a href="forgot.php" class="forget">Forgot?</a>
                 </form>
             </div>
             <!-- end form-panel -->

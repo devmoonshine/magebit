@@ -1,22 +1,31 @@
 $(document).ready(function () {
-    // shifts white form to the left, when clicking sign-up button
-    // white login form changes to sign up form
-    // changes form action link to register.php
-    $('.sign-up').on('click', function () {
+    $('.fullname').hide()
+    $('button.sign-up-switch').on('click', function () {
         $('.form-panel').css('position', 'relative').animate({
                 left: '-=420px'
             },
-            1000,
-            function () {
+            1000)
+    })
 
-                // white sign-up form changes to log in form
-                // changes for action link to login.php
-                $('.log-in').on('click', function () {
-                    // white form shifts to right, when clicking log-in button
-                    $('.form-panel').css('position', 'relative').animate({
-                        left: '420px'
-                    })
-                })
-            })
+    $('button.log-in-switch').on('click', function () {
+        $('.form-panel').css('position', 'relative').animate({
+            left: '+=420px'
+        }, 1000)
+    })
+
+    $('button.sign-up-switch').on('click', function () {
+        $('form').attr('action', 'register.php')
+        $('h3.with-logo').html('Sign Up')
+        $('.fullname').show()
+        $('button.in-form').html('Sign Up')
+        $('a.forget').hide()
+    })
+
+    $('button.log-in-switch').on('click', function () {
+        $('form').attr('action', 'login.php')
+        $('h3.with-logo').html('Log In')
+        $('.fullname').hide()
+        $('button.in-form').html('Log In')
+        $('a.forget').show()
     })
 })

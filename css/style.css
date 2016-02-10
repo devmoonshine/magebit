@@ -132,12 +132,12 @@ button[type="submit"] {
     border-radius: 25px;
 }
 
-button.sign-up {
+button:not(.in-form) {
     width: 140px;
     height: 50px;
     background: none;
     position: relative;
-    top: -12px;
+    top: 10px;
     right: 10px;
     text-transform: uppercase;
     border: 2px solid #49abfe;
@@ -149,7 +149,8 @@ button:focus {
 }
 
 input#password,
-input#email {
+input#email,
+input#fullname {
     height: 30px;
     width: 280px;
     background-color: transparent;
@@ -176,6 +177,11 @@ label.password-label {
 
 label.email-label {
     background: url(images/ic_mail.png) no-repeat;
+    background-position: 99% 50%;
+}
+
+label.fullname-label {
+    background: url(images/ic_user.png) no-repeat;
     background-position: 99% 50%;
 }
 
