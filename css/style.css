@@ -1,0 +1,166 @@
+/* Fonts */
+
+@font-face {
+    src: url('../fonts/SourceSansPro-Light.otf');
+    font-family: 'Source Sans Pro';
+}
+
+body {
+    background: url('images/Background.png') no-repeat;
+    background-position-x: -36px;
+    font-family: 'Source Sans Pro';
+    letter-spacing: 1px;
+}
+
+sup {
+    color: red;
+}
+
+sup::before {
+    content: ' ';
+}
+
+.login-panel {
+    width: 920px;
+    height: 420px;
+    margin: 0 auto;
+    margin-top: 190px;
+    background-color: rgba(15, 26, 47, 0.9);
+}
+
+.panel-left {
+    width: 275px;
+    height: 194px;
+    position: relative;
+    margin-top: 80px;
+    margin-left: 75px;
+    line-height: 30px;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.panel-right {
+    width: 275px;
+    height: 194px;
+    position: relative;
+    left: 10px;
+    margin-top: 80px;
+    margin-left: 75px;
+    line-height: 30px;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    color: #ffffff;
+}
+
+hr {
+    background-color: #49abfe;
+    width: 40px;
+    height: 2px;
+    margin: 20px auto 20px 0;
+}
+
+.form-panel hr {
+    position: relative;
+    top: 120px;
+}
+
+.form-panel {
+    background-color: #ffffff;
+    width: 462px;
+    height: 460px;
+    margin-top: -20px;
+    margin-left: -36px;
+    /* padding-left: 90px; */
+    border: 1px solid #49abfe;
+}
+
+.form-content {
+    width: 280px;
+    height: 264px;
+    margin: 0 auto;
+    position: relative;
+    top: -39px;
+}
+
+form {
+    height: auto;
+    position: relative;
+    top: 150px;
+    /*left: 90px;*/
+}
+
+form > .form-group {
+    position: relative;
+    top: -35px;
+}
+
+a,
+a:hover {
+    color: #8495b7;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: inherit;
+    position: relative;
+    left: 83px;
+}
+
+button[type="submit"] {
+    width: 140px;
+    height: 50px;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+button.sign-up {
+    width: 140px;
+    height: 50px;
+    background: none;
+    position: relative;
+    top: 18px;
+    right: 10px;
+    text-transform: uppercase;
+    border: 2px solid #49abfe;
+    border-radius: 25px;
+}
+
+.form-panel input,
+.form-panel input:focus {
+    outline: none;
+    border: none;
+}
+
+h3.with-logo {
+    background: url('images/logo.png') no-repeat;
+    background-position-x: 242px;
+    position: relative;
+    top: 111px;
+}
+
+input#password,
+input#password:focus {
+    margin-bottom: -30px;
+    background: url(images/ic_lock.png) no-repeat;
+    background-position: 99% 50%;
+}
+
+input#email,
+input#email:focus {
+    background: url(images/ic_mail.png) no-repeat;
+    background-position: 99% 50%;
+}
+
+footer {
+    width: 280px;
+    line-height: 14px;
+    position: relative;
+    top: 110px;
+    margin: 0 auto;
+    color: #a7b3cb;
+    font-size: 13px;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
