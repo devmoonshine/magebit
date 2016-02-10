@@ -62,7 +62,9 @@ hr {
 
 .form-panel hr {
     position: relative;
-    top: 120px;
+    top: -150px;
+    left: 85px;
+    margin: inherit;
 }
 
 .form-panel {
@@ -74,6 +76,24 @@ hr {
     top: -20px;
     margin-left: 0px;
     border: 1px solid #49abfe;
+}
+
+h3.with-logo {
+    position: relative;
+    background: url(images/logo.png) no-repeat;
+    background-position-x: 100%;
+    top: -180px;
+    left: 85px;
+    overflow: hidden;
+    /* margin: 0 auto; */
+    width: 280px;
+    height: 28px;
+}
+
+.form-panel hr {
+    position: relative;
+    top: -184px;
+    left: 89px;
 }
 
 
@@ -88,10 +108,11 @@ hr {
 */
 
 form {
+    width: 62%;
+    margin: 0 auto;
     height: auto;
     position: relative;
-    /*top: 150px; */
-    /*left: 90px;*/
+    top: -150px;
 }
 
 a,
@@ -116,27 +137,44 @@ button.sign-up {
     height: 50px;
     background: none;
     position: relative;
-    top: 18px;
+    top: -12px;
     right: 10px;
     text-transform: uppercase;
     border: 2px solid #49abfe;
     border-radius: 25px;
 }
 
-h3.with-logo {
-    background: url('images/logo.png') no-repeat;
-    background-position-x: 242px;
+button:focus {
+    background: none;
 }
 
 input#password,
-input#password:focus {
-    margin-bottom: -30px;
+input#email {
+    height: 30px;
+    width: 280px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #cbd2df;
+    box-shadow: none;
+    outline: 0;
+}
+
+input#password {
+    margin-bottom: 35px;
+}
+
+label {
+    width: 280px;
+    margin: 0;
+}
+
+label.password-label {
     background: url(images/ic_lock.png) no-repeat;
     background-position: 99% 50%;
 }
 
-input#email,
-input#email:focus {
+label.email-label {
     background: url(images/ic_mail.png) no-repeat;
     background-position: 99% 50%;
 }

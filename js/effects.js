@@ -4,20 +4,19 @@ $(document).ready(function () {
     // changes form action link to register.php
     $('.sign-up').on('click', function () {
         $('.form-panel').css('position', 'relative').animate({
-                    left: '-=420'
-                },
-                1000,
-                function () {
+                left: '-=420px'
+            },
+            1000,
+            function () {
 
-                    // white sign-up form changes to log in form
-                    // changes for action link to login.php
-                    $('.log-in').on('click', function () {
-                        // white form shifts to right, when clicking log-in button
-                        $('form-panel').animate({
-                            left: '-=420'
-                        })
+                // white sign-up form changes to log in form
+                // changes for action link to login.php
+                $('.log-in').on('click', function () {
+                    // white form shifts to right, when clicking log-in button
+                    $('.form-panel').css('position', 'relative').animate({
+                        left: '420px'
                     })
                 })
-            //$('.panel-right').css('visibility', 'visible')
+            })
     })
 })
