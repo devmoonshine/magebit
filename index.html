@@ -20,7 +20,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body onload="setupPos()">
     <div class="container-fluid">
         <div class="login-panel" style="display: block;">
             <div class="col-sm-6">
@@ -45,7 +45,7 @@
                 <!-- end embedded -->
             </div>
             <!-- end col-sm-6 -->
-            <div class="form-panel log-in">
+            <div class="form-panel log-in" id="panel-element">
                 <h3 class="with-logo">Login</h3>
                 <hr>
                 <form action="login.php">
