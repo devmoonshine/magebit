@@ -76,6 +76,7 @@ hr {
     top: -20px;
     margin-left: 0px;
     border: 1px solid #49abfe;
+    overflow: hidden;
 }
 
 h3.with-logo {

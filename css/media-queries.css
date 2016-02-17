@@ -1,3 +1,35 @@
-@media only screen and (max-width:523px) {
-
+@media only screen and (max-width:977px) {
+    .col-sm-6 {
+        display: none;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    .login-panel {
+        width: 70%;
+    }
+    .form-panel {
+        width: 60%;
+        position: relative;
+        left: auto;
+        margin: 0 auto;
+        border: 1px solid rgb(73, 171, 254);
+    }
+    .forget {
+        margin-left: -20px;
+    }
+    label,
+    h3.with-logo {
+        background: none !important;
+    }
+    h3.with-logo {
+        position: relative;
+        top: 50px;
+        margin-left: 10%;
+    }
+    hr {
+        display: none;
+    }
 }
