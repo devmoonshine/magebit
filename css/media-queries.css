@@ -8,17 +8,20 @@
         position: relative;
     }
     .login-panel {
-        width: 70%;
+        width: 90%;
     }
     .form-panel {
-        width: 60%;
+        width: 50%;
         position: relative;
         left: auto;
+        padding-top: 220px;
         margin: 0 auto;
         border: 1px solid rgb(73, 171, 254);
     }
     .forget {
-        margin-left: -20px;
+        position: relative;
+        left: 10px;
+        margin: 0 auto;
     }
     label,
     h3.with-logo {
@@ -26,10 +29,21 @@
     }
     h3.with-logo {
         position: relative;
-        top: 50px;
-        margin-left: 10%;
+        top: -170px;
     }
     hr {
-        display: none;
+        display: none !important;
+    }
+    input {
+        width: 90% !important;
+    }
+    .login-switch.mobile {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:660px) {
+    .form-panel {
+        width: 80%;
     }
 }
